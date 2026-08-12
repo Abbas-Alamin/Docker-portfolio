@@ -6,14 +6,12 @@ An end-to-end repository showcasing enterprise-grade containerization workflows,
 
 ## 🗺️ Portfolio Architecture & Sub-Projects
 
-Docker-portfolio/
-│
-├── 01-flask-web-app/             # Python/Flask Containerization & Optimization
-│   ├── app.py                    # Multi-route Python Flask Application
-│   ├── Dockerfile                # Layered container build definition
-│   └── README.md                 # Project-specific execution instructions
-│
-└── README.md                     # Main Portfolio Documentat
+# Docker-portfolio
+
+​**Flask-app/:** Python/Flask Containerization & Optimization project directory.
+​**Flask-app/app.py:** Multi-route Python Flask application script (/ and /abbas).
+​**Flask-app/Dockerfile:** Layered container build definition and caching configuration.
+
 ---
 
 ## 🛠️ Core Concepts Implemented
