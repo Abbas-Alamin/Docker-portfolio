@@ -1,0 +1,37 @@
+services:                                                
+  app:                                                   
+    image: nginx                                         
+    depends_on:                                          
+      - db                                               
+    networks:                                            
+      - app-net                                          
+    ports:                                               
+      - "8080:80"                                        
+    volumes:                                             
+      - my-data:/usr/share/nginx/html                    
+                                                         
+  db:                                                    
+    image: mysql                                         
+    environment:                                         
+      MYSQL_ROOT_PASSWORD: my-secret                     
+    volumes:                                             
+      - mysql-vol:/var/lib/mysql                         
+    networks:                                            
+      - app-net                                          
+    ports:                                               
+      - "3306:3306"                                      
+                                                         
+####################################################################################################
+networks:                                                
+  app-net:                                               
+    ipam:                                                
+      config:                                            
+        - subnet: 172.25.0.0/16                          
+volumes:                                                 
+  mysql-vol:                                             
+  my-data:                                               
+    external: true                      # already exists in the host  
+~                                                                                                                                                     
+~                                                                                                                                                     
+~                                                                                                                                                     
+~                                                                    
