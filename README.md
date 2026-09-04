@@ -7,6 +7,7 @@ An end-to-end repository showcasing enterprise-grade containerization workflows,
 ## 🗺️ Portfolio Architecture & Sub-Projects
 
 # Docker-portfolio
+****************************************************************
 
 ​**Flask-app/:** Python/Flask Containerization & Optimization project directory.
 ​
@@ -25,6 +26,7 @@ An end-to-end repository showcasing enterprise-grade containerization workflows,
 ******************************************************************
 
 **Docker-compose/:** Multi-container orchestration project directory.
+
 **Docker-compose/compose.yml:** Orchestration setup defining Nginx web proxy and MySQL database services with isolated custom networking and external volume persistence.
 
 ---
